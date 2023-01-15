@@ -12,31 +12,3 @@ body {
     height:100%;
     background-color: #f8d43e;
 }
-
-.logoDiv {
-    width: 200px;
-    height: 50px;
-    margin-right: -100px;
-    margin-bottom:-25px;
-    top:50%;
-    font-size:45px;
-    text-align: center;
-}
-
-.portfolio {
-    position: absolute;
-    padding-top: 20px;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    display: block;
-}
-
-.portfolioItem {
-    border-radius: 10px;
-    width: 400px;
-    height: 250px;
-    background-color: white;
-    display: inline-block;
-    box-shadow: 1px 1px 10px #888888;
-}
