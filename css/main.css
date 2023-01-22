@@ -1,14 +1,133 @@
-@font-face { font-family: leagueSpartan; src: url('../fonts/LeagueSpartan-VariableFont_wght.ttf'); } 
+@font-face {
+    font-family: leagueSpartan;
+    src: url('../fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
 
 body {
     font-family: leagueSpartan;
+    color: white;
+    background-color: #f8d43e;
+    background-image: -webkit-linear-gradient(#f8d43e, #7a6305);
+    background-attachment: fixed;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .background {
     position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: relative;
+    resize: both;
+    width: 120px;
+    margin-top: -50px;
+    position: relative;
+    top: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
     background-color: #f8d43e;
+}
+
+.portfolio {
+    position: absolute;
+    margin-left: -12px;
+    height: 100%;
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.divImages {
+    resize: both;
+    width: 100%;
+}
+
+.firstImpact {
+    padding-top: 200px;
+}
+
+.firstImpact .title {
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+.firstImpact .title2 {
+    font-size: 25px;
+    display: block;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sectionBG {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sectionTitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sectionContent p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.aboutBG {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Override bootstrap */
+/* Override card from bootstrap */
+.card {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    border: 0px !important;
+    display: inline-flex !important;
+    border-radius: 0px;
+    color: white;
+}
+
+.card-body {
+    background-color: #f8d43e;
+}
+
+.card img {
+    border-radius: 0px !important;
+}
+
+.navbar {
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav-link:hover {
+    color: rgba(0, 0, 0, 0.8);
 }

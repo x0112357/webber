@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin-top:0px;
+    }
+    .portfolio {
+        position: absolute;
+        margin-left: -12px;
+        height: 90%;
+        width: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+  }
