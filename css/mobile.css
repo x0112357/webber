@@ -12,4 +12,7 @@
         overflow-y: scroll;
         overflow-x: hidden;
     }
+    .navbar {
+        margin-top:-50px;
+    }
   }

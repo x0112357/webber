@@ -21,8 +21,8 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./css/lib/bootstrap/bootstrap.css" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/main.css?v=1" />
+    <link rel="stylesheet" href="./css/mobile.css?v=1" />
 </head>
 
 <body>
@@ -31,51 +31,71 @@
             <a class="navbar-brand" href="#">
                 <img class="logo" src="./media/logoLetteringWhite.png">
             </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading1">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading1">Portfólio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading2">Contacto</a>
-                </li>
-            </ul>
         </div>
     </nav>
     <!-- intro about -->
     <div class="container-fluid sectionBG">
-        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
-            class="scrollspy-example container" tabindex="0">
+        <div data-bs-spy="scroll" data-bs-target="" data-bs-offset="0" class="scrollspy container" tabindex="0">
             <div class="row">
-                <div class="col-sm-6 firstImpact">
-                    <span class="title">Os melhores websites da tuga</span>
-                    <span class="title2">Todos os nossos clientes gostam de pus</span>
+
+                <div class="col-12 col-sm-6" style="display: [SERVER_DISPLAY];margin:auto;text-align: center;color:black;border:1px solid rgba(0,0,0,0.05);padding:15px;">
+                    <span class="serverMessage">
+                    [SERVER_MESSAGE]
+                    </span>
                 </div>
-                <div class="col-sm-6">
+
+                <div class="col-sm-12 firstImpact">
+                    <span class="title">Soluções web e outras cenas</span>
+                    <span class="title2">Peça o seu orçamento agora sem compromissos</span>
+                    <p> <img style="resize:both; width: 300px;" src="./media/desktopComputerOrto2.png"> </p>
+                    <button class="btn btn-lg btn-warning" data-bs-toggle="collapse" data-bs-target="#contactForm"
+                        aria-expanded="false" aria-controls="collapseExample"
+                        style="color:white;background-color:#f8d43e;">Orçamento
+                        Gratuito</button>
+                </div>
+
+                <div class="collapse" id="contactForm">
+                    <div class="col-12 col-xs-12 col-sm-6" style="display: block;margin:auto;color:rgba(0,0,0,0.5);padding:30px;border:1px solid rgba(0,0,0,0.05);border-radius: 10px;margin-top:30px;">
+                        <form action="./be/sendEmail.php" method="POST">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                <input type="text" name="nome" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Endereço de E-mail</label>
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">O seu endereço de e-mail será utilizado apenas
+                                    para lhe enviar o orçamento ou para pedir mais informações sobre o mesmo.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Descrição do Site</label>
+                                <textarea class="form-control" name="descricao" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"></textarea>
+                            </div>
+                            <button type="submit" style="color:white;background-color:#f8d43e;"
+                                class="btn btn-warning">Enviar pedido</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- <div class="col-sm-12">
                     <img class="divImages" src="./media/desktopComputerOrto2.png">
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 
-    <div class="container-fluid aboutBG">
-        <!-- about section -->
-        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
-            class="scrollspy-example container" tabindex="0">
+    <div class="container-fluid footerSectionBG">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <img class="divImages" src="">
+                <div class="col-6 col-md-6">
+                    2023 &copy webber.pt
                 </div>
-                <div class="col-sm-6">
-                    <span class="sectionTitle"> Sobre a webber </span>
-                    <span class="sectionContent">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex arcu, tincidunt sed
-                            vulputate
-                            in, finibus vel ex. Aenean ac ligula vitae dui varius fringilla. Nullam eget laoreet eros.
-                        </p>
-                    </span>
+                <div class="col-6 col-md-6" style="text-align: right;">
+                    geral@webber.pt
                 </div>
             </div>
         </div>
